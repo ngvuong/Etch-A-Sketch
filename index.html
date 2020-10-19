@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="left-panel">
+      <div class="etch-a-sketch">
+        <span id="title">𝓔𝓽𝓬𝓱-𝓐-𝓢𝓴𝓮𝓽𝓬𝓱</span>
+        <p id="instruction">
+          Hold Ctrl to sketch <br />
+          Hold Shift to erase
+        </p>
+      </div>
+      <div class="control">
+        <button class="circle" id="reset-btn">Reset</button>
+        <div class="options">
+          <select name="mode" id="mode-select">
+            <option disabled>Choose Mode</option>
+            <option disabled>----</option>
+            <option value="fill">Fill (default)</option>
+            <option value="rgb">Random RGB</option>
+            <option value="shading">Shading</option>
+          </select>
+          <input type="color" id="color-picker" />
+        </div>
+
+        <input
+          type="text"
+          name="grid-size"
+          id="size-input"
+          placeholder="Enter Grid Size(2-100)"
+        />
+
+        <button class="circle" id="sketch-btn">Sketch</button>
+      </div>
+    </div>
+
+    <div class="container"></div>
+    <script src="script/etch-a-sketch.js"></script>
+  </body>
+</html>

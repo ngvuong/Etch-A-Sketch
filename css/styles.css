@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: aliceblue;
+  overflow: hidden;
+  font-family: "Dancing Script", cursive;
+  background-image: url("../assets/mountain.jpg");
+  background-size: cover;
+}
+.container {
+  display: grid;
+  min-width: 90vh;
+  height: 90vh;
+  background-color: rgb(255, 255, 255);
+  border: 30px solid red;
+}
+
+.squares {
+  border: 0.5px solid rgba(153, 141, 141, 0.246);
+}
+
+.control {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10em;
+}
+
+#mode-select,
+#size-input {
+  max-height: 20px;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  /* padding: 0; */
+  width: 5em;
+  height: 5em;
+  background: radial-gradient(
+    rgba(105, 99, 99, 0.849),
+    rgba(228, 230, 236, 0.349)
+  );
+
+  border-radius: 50%;
+  color: yellow;
+  font-weight: bold;
+  border: 10px solid rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+  outline: none;
+}
+
+#title {
+  font-size: 5em;
+  color: rgb(206, 184, 64);
+  text-shadow: -5px 5px rgb(156, 46, 70);
+  /* margin-bottom: em; */
+}
+
+#instruction {
+  font-size: 2em;
+  text-align: center;
+  /* margin-top: 5em; */
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.left-panel {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
